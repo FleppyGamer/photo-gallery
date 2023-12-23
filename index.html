@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>jQuery</title>
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <header>
+            <h1>Photo Gallery</h1>
+            <button type="submit" id="header-button">New Image +</button>
+        </header>
+        <form>
+            <h2>Add new image</h2>
+            <input type="url" placeholder="Image url address" id="new-image" required>
+            <input type="text" placeholder="Describe your image" id="description-new-image" required>
+            <button type="submit">Add</button>
+            <button type="reset" id="cancel">Cancel</button>
+        </form>
+        <ul>
+            <li>
+                <img src="images/foto1.jpg" alt="Painting of a cat">
+                <div class="overlay-image-link">
+                    <a href="images/foto1.jpg" title="See this image in real size" target="_blank">See this image in real size</a>
+                </div>
+                <li>
+                    <img src="images/foto2.jpg" alt="Image of a flamengo">
+                    <div class="overlay-image-link">
+                        <a href="images/foto2.jpg" title="See this image in real size" target="_blank">See this image in real size</a>
+                    </div>            
+                </li>
+                <li>
+                    <img src="images/foto3.jpg" alt="Dogs">
+                    <div class="overlay-image-link">
+                        <a href="images/foto3.jpg" title="See this image in real size" target="_blank">See this image in real size</a>
+                    </div>            
+                </li>
+                <li>
+                    <img src="images/foto4.jpg" alt="A bee hovering a flower">
+                    <div class="overlay-image-link">
+                        <a href="images/foto4.jpg" title="See this image in real size" target="_blank">See this image in real size</a>
+                    </div>            
+                </li>            
+            </li>
+        </ul>
+        <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+        <script src="js/main.js"></script>
+    </body>
+</html>
